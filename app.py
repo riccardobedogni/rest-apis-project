@@ -79,6 +79,7 @@ def create_app(db_url=None):
             jsonify({"description": "Request does not contain an access token.", "error": "authorized_required"}), 401
         )
 
+
     api.register_blueprint(ItemBlueprint)
     api.register_blueprint(StoreBlueprint)
     api.register_blueprint(TagBlueprint)
